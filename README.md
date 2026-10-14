@@ -1,2 +1,2 @@
-# Programacao WebI EAD IFSUDESTE
+# Programacao Web I EAD IFSUDESTE
 Repositório destinado aos conteúdos e atividades da disciplina Programação Web
