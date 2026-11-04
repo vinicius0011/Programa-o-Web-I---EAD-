@@ -1,0 +1,213 @@
+family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* cabeçalho */
+header {
+    background-color: #123456;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+/* cabeçalho título h1*/
+header h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* cabeçalho parágrafo*/
+header p {
+    font-size: 17px;
+    color: #dce6f1;
+}
+
+/* títulos h1 e h2*/
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+}
+
+h2 {
+    color: #123456;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2196f3;
+    padding-bottom: 8px;
+}
+
+/* Main */
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* Secão */
+section {
+    background-color: #ffffff;
+    border: 1px solid #d5dce5;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+/* Parágrafos */
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Parágrafo da descrição pessoal */
+.destaque {
+    color: #1565c0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*lista*/
+ol {
+    margin-left: 30px;
+    padding: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/*Imagem/foto*/
+img {
+    width: 1000px;
+    height: 500px;
+    max-width: 100%;
+    object-fit: cover;
+    border: 5px solid #123456;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+/* NAVEGAÇÃO */
+nav {
+    background-color: #e3eaf2;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+nav h1 {
+    color: #123456;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e65100;
+    text-decoration: underline;
+}
+/*Links*/
+a {
+    transition: 5.00s;
+}
+s
+/* Formulário de Contato */
+form {
+    background-color: #ffffff;
+    border: 1px solid #d5dce5;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6da174;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin: 0 0 15px 0;
+    border: 2px solid #aab7c4;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+form textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border: 2px solid #2196f3;
+}
+
+form button {
+    background-color: #6da174;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+form button:hover {
+    background-color: #2196f3;
+}
+
+
+footer {
+    background-color: #123456;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    text-align: center;
+    color: #ffffff;
+}
+
+footer h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #2196f3;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+footer a {
+    color: #90caf9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
