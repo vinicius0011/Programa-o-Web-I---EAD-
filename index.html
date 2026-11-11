@@ -1,63 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Página</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Página Pessoal</title>
 </head>
 
 <body>
-	<header>
-		<h1>Descrição Pessoal</h1>
-		<p class="destaque">Profissional com anos de experiência em atendimento ao cliente buscando uma oportunidade no mercado de T.I </p>
-	</header>
 
-	<main>
-		<section>
-			<h2>Sobre mim</h2>
-			<p>Vendedor já faz alguns anos. Nesse tempo, tive a oportunidade de conhecer e desenvolver habilidades inerentes ao cargo. No meio acadêmico, comecei um bacharelado na área de T.I e hoje retorno meus estudos através desse curso no formato EAD, visando minha recolocação no mercado de trabalho.</p>			
-			<img src="img/geralt-earth.jpg" width="500" height="300" alt="Mundo conectado">		
-		</section>
+    <div class="pagina">
 
-		<section>
-			<h2>Hobbies / Interesses</h2>		
-			<ol>
-				<li>Tecnologia</li>
-				<li>Filmes</li>
-				<li>Séries</li>
-				<li>Caminhar</li>
-			</ol>
-		</section>
+        <header>
+            <h1>Descrição Pessoal</h1>
 
-		<nav> 
-			<h1>MATERIAL DE APOIO HTML!</h1>				
-			<p>CLIQUE NOS LINKS ABAIXO:</p>			
-			<ol>
-				<li><a href="https://www.w3schools.com/">W3SCHOOLS</a></li>
-				<li><a href="https://www.dio.me/curso-html/">DIO.ME</a></li>
-				<li><a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/">CURSO EM VIDEO</a></li>
-			</ol>
-		</nav>
-	</main>
+            <p class="destaque">
+                Profissional com anos de experiência em atendimento ao cliente
+                buscando uma oportunidade no mercado de T.I.
+            </p>
+        </header>
 
-	<footer>
-		<p><strong>Marcus Vinícius Monteiro dos Santos.</strong></p>
-		<p><strong>Todos os direitos reservados.</strong></p>
-		<br>
-		<h2>Perfil Profissional</h2>
-		<p><a href="https://www.linkedin.com/in/marcusmonteirobso"> Acesse o Linkedin</a></p>
+        <main>
 
-		<section id="contato">
-			<a href="formulario.html">ENTRE EM CONTATO</a> 
-		</section>
-	</footer>
+            <section class="sobre">
+                <h2>Sobre mim</h2>
 
-	<br>
+                <p>
+                    Vendedor já faz alguns anos. Nesse tempo, tive a oportunidade
+                    de conhecer e desenvolver habilidades inerentes ao cargo.
+                    No meio acadêmico, comecei um bacharelado na área de T.I e
+                    hoje retorno meus estudos através desse curso no formato EAD,
+                    visando minha recolocação no mercado de trabalho.
+                </p>
 
-	<nav>
-		<a href="sobre.html">Sobre o curso Técnico em Informática </a> 
-	</nav>
+                <img src="img/geralt-earth.jpg"
+                     width="500"
+                     height="300"
+                     alt="Mundo conectado">
+            </section>
+
+
+            <section class="tecnologias">
+
+                <h2>Tecnologias Emergentes</h2>
+
+                <div class="container-cards">
+
+
+                    <div class="card card-chatgpt">
+
+                        <img src="img/gpt.png"
+                             alt="Logo ChatGPT">
+
+                        <h3>ChatGPT</h3>
+
+                        <p>
+                            Inteligência artificial desenvolvida pela OpenAI,
+                            capaz de compreender perguntas, criar textos,
+                            auxiliar nos estudos e gerar códigos de programação.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="card card-claude">
+
+                        <img src="img/claude.png"
+                             alt="Logo Claude">
+
+                        <h3>Claude</h3>
+
+                        <p>
+                            Assistente de inteligência artificial desenvolvido
+                            pela Anthropic, utilizado para análise de informações,
+                            produção de textos e resolução de problemas.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="card card-perplexity">
+
+                        <img src="img/perplexity.png"
+                             alt="Logo Perplexity">
+
+                        <h3>Perplexity</h3>
+
+                        <p>
+                            Ferramenta de inteligência artificial que auxilia
+                            em pesquisas na internet, apresentando respostas
+                            acompanhadas de fontes e referências.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card card-gemini">
+
+                        <img src="img/gemini.png"
+                             alt="Logo Gemini">
+
+                        <h3>Gemini</h3>
+
+                        <p>
+                            Inteligência artificial desenvolvida pelo Google,
+                            capaz de auxiliar na criação de conteúdos,
+                            pesquisas, programação e análise de informações.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <section class="hobbies">
+
+                <h2>Hobbies / Interesses</h2>
+
+                <ol>
+                    <li>Tecnologia</li>
+                    <li>Filmes</li>
+                    <li>Séries</li>
+                    <li>Caminhar</li>
+                </ol>
+
+            </section>
+
+
+
+            <nav class="material">
+
+                <h2>MATERIAL DE APOIO HTML!</h2>
+
+                <p>CLIQUE NOS LINKS ABAIXO:</p>
+
+                <ol>
+                    <li>
+                        <a href="https://www.w3schools.com/">
+                            W3SCHOOLS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.dio.me/curso-html/">
+                            DIO.ME
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/">
+                            CURSO EM VIDEO
+                        </a>
+                    </li>
+                </ol>
+
+            </nav>
+
+        </main>
+
+
+        <footer>
+
+            <p><strong>Todos os direitos reservados.</strong></p>
+
+            <h2>Perfil Profissional</h2>
+
+            <p>
+                <a href="https://www.linkedin.com/in/marcusmonteirobso">
+                    Acesse o Linkedin
+                </a>
+            </p>
+
+            <section id="contato">
+
+                <a href="formulario.html">
+                    ENTRE EM CONTATO
+                </a>
+
+            </section>
+
+        </footer>
+
+
+        <nav class="navegacao-final">
+
+            <a href="sobre.html">
+                Sobre o curso Técnico em Informática
+            </a>
+
+        </nav>
+
+    </div>
 
 </body>
 </html>
