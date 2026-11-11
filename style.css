@@ -1,19 +1,245 @@
-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f4f8;
-    color: #333333;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f3f5;
+    color: #333;
     line-height: 1.6;
 }
 
-/* cabeçalho */
+/* CABEÇALHO */
+
 header {
-    background-color: #123456;
+    grid-area: cabecalho;
+    background-color: #1e3a5f;
     color: white;
+    padding: 30px;
     text-align: center;
-    padding: 35px 20px;
+    border-radius: 10px;
 }
 
-/* cabeçalho título h1*/
 header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.destaque {
+    font-size: 18px;
+    color: #dce8f5;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    grid-area: conteudo;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+/* SOBRE MIM */
+
+.sobre {
+    grid-column: 1 / -1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.sobre h2 {
+    color: #1e3a5f;
+    margin-bottom: 15px;
+}
+
+.sobre p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.sobre img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border: 3px solid #1e3a5f;
+    border-radius: 8px;
+}
+
+
+/* TECNOLOGIAS EMERGENTES */
+
+.tecnologias {
+    grid-column: 1 / -1;
+    background-color: #e4ebf3;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.tecnologias h2 {
+    text-align: center;
+    color: #1e3a5f;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+
+/* GRID DOS CARDS */
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+/* ESTILIZAÇÃO DOS CARDS */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #d0d7de;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+    text-align: center;
+    transition: transform 0.3s;
+
+/* FLEXBOX PARA ORGANIZAÇÃO INTERNA */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* LOGOS DOS CARDS */
+
+.card img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+/* TÍTULOS DOS CARDS */
+
+.card h3 {
+    color: #1e3a5f;
+    font-size: 21px;
+}
+
+/* TEXTOS DOS CARDS */
+
+.card p {
+    font-size: 14px;
+    text-align: justify;
+    color: #555;
+}
+
+
+/* HOBBIES */
+
+.hobbies {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.hobbies h2 {
+    color: #1e3a5f;
+    margin-bottom: 15px;
+}
+
+.hobbies ol {
+    padding-left: 25px;
+}
+
+.hobbies li {
+    margin-bottom: 8px;
+}
+
+/* MATERIAL DE APOIO */
+
+.material {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.material h2 {
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+.material ol {
+    padding-left: 25px;
+}
+
+.material a {
+    color: #1769aa;
+    text-decoration: none;
+}
+
+.material a:hover {
+    text-decoration: underline;
+}
+
+/* RODAPÉ */
+
+footer {
+    grid-area: rodape;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer h2 {
+    margin-top: 15px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+
+}
+
+#contato {
+    margin-top: 20px;
+
+}
+
+.navegacao-final {
+    grid-area: navegacao;
+    background-color: #dce8f5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.navegacao-final a {
+    color: #1e3a5f;
+    font-weight: bold;
+    text-decoration: none;
+
+}
     font-size: 32px;
     color: #ffffff;
     margin-bottom: 15px;
