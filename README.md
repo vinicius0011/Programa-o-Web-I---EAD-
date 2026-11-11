@@ -20,4 +20,7 @@ Programação Web.
 
 <img width="1330" height="710" alt="CSS2" src="https://github.com/user-attachments/assets/662c5e8c-b515-47e4-8306-72135cbcdc18" />
 <img width="1293" height="682" alt="CSS" src="https://github.com/user-attachments/assets/05a72c40-39a0-44f4-ba36-1dff5a25cc8d" />
+<img width="1330" height="554" alt="Cards print" src="https://github.com/user-attachments/assets/708b8e82-559f-4912-bb0d-1585210daae3" />
+
+
 
