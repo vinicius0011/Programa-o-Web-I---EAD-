@@ -1,3 +1,5 @@
+/*estilização gerais*/
+
 * {
     margin: 0;
     padding: 0;
@@ -11,179 +13,196 @@ body {
     line-height: 1.6;
 }
 
-/* CABEÇALHO */
+
+/*Grid principal*/
+
+.pagina {
+    width: 95%;
+    max-width: 75rem;
+    margin: 1.25rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "cabecalho"
+        "conteudo"
+        "rodape"
+        "navegacao";
+    gap: 1.25rem;
+}
+
+
+/*Cabeçalho*/
 
 header {
     grid-area: cabecalho;
     background-color: #1e3a5f;
     color: white;
-    padding: 30px;
+    padding: 2rem;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 header h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 0.625rem;
 }
 
 .destaque {
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #dce8f5;
 }
 
-/* CONTEÚDO PRINCIPAL */
+
+/*Principal main*/
 
 main {
     grid-area: conteudo;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
 }
 
 
-/* SOBRE MIM */
+/*Sobre mim*/
 
 .sobre {
     grid-column: 1 / -1;
     background-color: white;
-    padding: 25px;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
 }
 
 .sobre h2 {
     color: #1e3a5f;
-    margin-bottom: 15px;
+    margin-bottom: 0.9rem;
 }
 
 .sobre p {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     text-align: justify;
 }
 
 .sobre img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    max-width: 31.25rem;
     height: auto;
     margin: auto;
-    border: 3px solid #1e3a5f;
-    border-radius: 8px;
+    border: 0.2rem solid #1e3a5f;
+    border-radius: 0.5rem;
 }
 
 
-/* TECNOLOGIAS EMERGENTES */
+/*Seção Tecnologias Emergentes*/
 
 .tecnologias {
     grid-column: 1 / -1;
     background-color: #e4ebf3;
-    padding: 25px;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
 }
 
 .tecnologias h2 {
     text-align: center;
     color: #1e3a5f;
-    font-size: 28px;
-    margin-bottom: 25px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
-
-/* GRID DOS CARDS */
+/*Grid Cards*/
 
 .container-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
 }
 
-
-/* ESTILIZAÇÃO DOS CARDS */
+/*cards*/
 
 .card {
     background-color: white;
-    padding: 20px;
-    border-radius: 12px;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
     border: 1px solid #d0d7de;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s;
 
-/* FLEXBOX PARA ORGANIZAÇÃO INTERNA */
+/*Flexbox*/
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
-
+    gap: 0.9rem;
+    transition: transform 0.3s;
 }
 
-/* EFEITO AO PASSAR O MOUSE */
+
+/*Efeitos cards*/
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.4rem 0.9rem rgba(0, 0, 0, 0.15);
 }
 
-/* LOGOS DOS CARDS */
+/*Logos*/
 
 .card img {
-    width: 65px;
-    height: 65px;
+    width: 4rem;
+    height: 4rem;
     object-fit: contain;
 }
 
-/* TÍTULOS DOS CARDS */
+/*Títulos*/
 
 .card h3 {
     color: #1e3a5f;
-    font-size: 21px;
+    font-size: 1.3rem;
 }
 
-/* TEXTOS DOS CARDS */
-
+/*descrição*/
 .card p {
-    font-size: 14px;
+    font-size: 0.9rem;
     text-align: justify;
     color: #555;
 }
 
-
-/* HOBBIES */
+/*Hobbies*/
 
 .hobbies {
     background-color: white;
-    padding: 25px;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
 }
 
 .hobbies h2 {
     color: #1e3a5f;
-    margin-bottom: 15px;
+    margin-bottom: 0.9rem;
 }
 
 .hobbies ol {
-    padding-left: 25px;
+    padding-left: 1.5rem;
 }
 
 .hobbies li {
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
-/* MATERIAL DE APOIO */
+/*material de apoio*/
 
 .material {
     background-color: white;
-    padding: 25px;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
 }
 
 .material h2 {
     color: #1e3a5f;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
 .material ol {
-    padding-left: 25px;
+    padding-left: 1.5rem;
 }
 
 .material a {
@@ -195,245 +214,136 @@ main {
     text-decoration: underline;
 }
 
-/* RODAPÉ */
+/*Rodapé*/
 
 footer {
     grid-area: rodape;
     background-color: #1e3a5f;
     color: white;
-    padding: 25px;
+    padding: 1.5rem;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 footer h2 {
-    margin-top: 15px;
+    margin-top: 0.9rem;
 }
 
 footer a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
-
 }
 
 #contato {
-    margin-top: 20px;
-
+    margin-top: 1.25rem;
 }
+
+
+/*Final*/
 
 .navegacao-final {
     grid-area: navegacao;
     background-color: #dce8f5;
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
-    border-radius: 10px;
-
+    border-radius: 0.625rem;
 }
 
 .navegacao-final a {
     color: #1e3a5f;
     font-weight: bold;
     text-decoration: none;
-
-}
-    font-size: 32px;
-    color: #ffffff;
-    margin-bottom: 15px;
-}
-
-/* cabeçalho parágrafo*/
-header p {
-    font-size: 17px;
-    color: #dce6f1;
-}
-
-/* títulos h1 e h2*/
-h1 {
-    font-family: Arial, sans-serif;
-    font-size: 28px;
-}
-
-h2 {
-    color: #123456;
-    font-size: 24px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #2196f3;
-    padding-bottom: 8px;
-}
-
-/* Main */
-main {
-    width: 85%;
-    max-width: 1000px;
-    margin: 30px auto;
-}
-
-/* Secão */
-section {
-    background-color: #ffffff;
-    border: 1px solid #d5dce5;
-    border-radius: 8px;
-    padding: 25px;
-    margin-bottom: 25px;
-}
-
-/* Parágrafos */
-p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-/* Parágrafo da descrição pessoal */
-.destaque {
-    color: #1565c0;
-    font-weight: bold;
-    text-align: center;
-}
-
-/*lista*/
-ol {
-    margin-left: 30px;
-    padding: 10px;
-}
-
-li {
-    margin-bottom: 8px;
-    font-size: 16px;
-}
-
-/*Imagem/foto*/
-img {
-    width: 1000px;
-    height: 500px;
-    max-width: 100%;
-    object-fit: cover;
-    border: 5px solid #123456;
-    border-radius: 15px;
-    margin-top: 15px;
-}
-
-/* NAVEGAÇÃO */
-nav {
-    background-color: #e3eaf2;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 8px;
-}
-
-nav h1 {
-    color: #123456;
-    font-size: 23px;
-    margin-bottom: 10px;
-}
-
-nav a {
-    color: #1565c0;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #e65100;
-    text-decoration: underline;
-}
-/*Links*/
-a {
-    transition: 5.00s;
-}
-s
-/* Formulário de Contato */
-form {
-    background-color: #ffffff;
-    border: 1px solid #d5dce5;
-    border-radius: 8px;
-    padding: 25px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 600px;
-    box-sizing: border-box;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #6da174;
-}
-
-form input,
-form textarea {
-    display: block;
-    width: 100%;
-    height: 45px;
-    padding: 10px;
-    margin: 0 0 15px 0;
-    border: 2px solid #aab7c4;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-}
-
-form textarea {
-    height: 130px;
-    resize: vertical;
-}
-
-form input:focus,
-form textarea:focus {
-    outline: none;
-    border: 2px solid #2196f3;
-}
-
-form button {
-    background-color: #6da174;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    font-size: 15px;
-}
-
-form button:hover {
-    background-color: #2196f3;
 }
 
 
-footer {
-    background-color: #123456;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 30px;
+/*Modo responsivo tablet*/
+
+@media screen and (max-width: 900px) {
+    .container-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
 }
 
-footer p {
-    text-align: center;
-    color: #ffffff;
-}
+/*Modo responsivo celular*/
 
-footer h2 {
-    color: #ffffff;
-    border-bottom: 2px solid #2196f3;
-    display: inline-block;
-    margin-top: 15px;
-}
+@media screen and (max-width: 600px) {
+    .pagina {
+        width: 94%;
+        margin: 0.6rem auto;
+        gap: 0.8rem;
+    }
 
-footer a {
-    color: #90caf9;
-    text-decoration: none;
-    font-weight: bold;
-}
+    main {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
 
-footer a:hover {
-    color: #ffffff;
-    text-decoration: underline;
+    .sobre,
+    .tecnologias {
+        grid-column: 1;
+    }
+
+    .container-cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    header {
+        padding: 1.3rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .destaque {
+        font-size: 0.95rem;
+    }
+    .sobre,
+    .tecnologias,
+    .hobbies,
+    .material {
+        padding: 1rem;
+    }
+
+    .sobre img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tecnologias h2 {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        padding: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 1.2rem;
+    }
+
+    .navegacao-final {
+        padding: 1rem;
+    }
+
 }
 
 
