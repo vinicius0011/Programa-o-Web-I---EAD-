@@ -260,9 +260,77 @@ footer a:hover {
 }
 
 
-/*Modo responsivo tablet*/
 
-@media screen and (max-width: 900px) {
+/* Celular (< 768 px) */
+
+.container-cards {
+    grid-template-columns: 1fr;
+}
+
+main {
+    grid-template-columns: 1fr;
+}
+
+.sobre,
+.tecnologias {
+    grid-column: 1;
+}
+
+/*Modo Celular (< 768 px)*/
+
+@media screen and (max-width: 768px) {
+
+    .pagina {
+        width: 94%;
+        margin: 0.6rem auto;
+        gap: 0.8rem;
+    }
+
+    header {
+        padding: 1.3rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .destaque {
+        font-size: 0.95rem;
+    }
+
+    .sobre,
+    .tecnologias,
+    .hobbies,
+    .material {
+        padding: 1rem;
+    }
+
+    .tecnologias h2 {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        padding: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 1.2rem;
+    }
+
+    .navegacao-final {
+        padding: 1rem;
+    }
+
+}
+
+/* Modo Tablet (768 - 1023 px) */
+
+@media screen and (min-width: 768px) {
+
     .container-cards {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -277,14 +345,19 @@ footer a:hover {
 
 }
 
-/*Modo responsivo celular*/
+/* Modo Desktop (>= 1024 px)*/
 
-@media screen and (max-width: 600px) {
-    .pagina {
-        width: 94%;
-        margin: 0.6rem auto;
-        gap: 0.8rem;
+@media screen and (min-width: 1024px) {
+
+    .container-cards {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
+
+    main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
 
     main {
         grid-template-columns: 1fr;
@@ -320,8 +393,13 @@ footer a:hover {
     }
 
     .sobre img {
+        display: block;
         width: 100%;
+        max-width: 100%;
         height: auto;
+        margin: auto;
+        border: 0.2rem solid #1e3a5f;
+        border-radius: 0.5rem;
     }
 
     .tecnologias h2 {
