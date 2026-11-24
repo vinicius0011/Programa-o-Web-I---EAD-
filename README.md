@@ -18,9 +18,15 @@ Programação Web.
 
 <img width="1339" height="727" alt="formulario" src="https://github.com/user-attachments/assets/cbf07bba-cc59-41ae-97ea-956d8f0df0fa" />
 
+
+
 <img width="1330" height="710" alt="CSS2" src="https://github.com/user-attachments/assets/662c5e8c-b515-47e4-8306-72135cbcdc18" />
 <img width="1293" height="682" alt="CSS" src="https://github.com/user-attachments/assets/05a72c40-39a0-44f4-ba36-1dff5a25cc8d" />
 <img width="1330" height="554" alt="Cards print" src="https://github.com/user-attachments/assets/708b8e82-559f-4912-bb0d-1585210daae3" />
+
+<img width="996" height="636" alt="Print Iphone SE" src="https://github.com/user-attachments/assets/996a2e91-b5d2-411a-8534-9d0b59150834" />
+
+<img width="1008" height="644" alt="Print iPad Pro 13" src="https://github.com/user-attachments/assets/82dea8b5-3151-4529-bcbe-45b00b016e62" />
 
 
 
